@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Files - File Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .drag-over {
+            border-color: #3b82f6 !important;
+            background-color: #dbeafe !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-3xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">File Storage Platform</h1>
+                <p class="text-gray-600">Upload files up to 10GB - High-speed local network transfer</p>
+                <p class="text-sm text-blue-600 mt-2">Server IP: <%= serverIP %></p>
+            </div>
+
+            <!-- Upload Area -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                <div id="dropZone" class="border-4 border-dashed border-gray-300 rounded-lg p-12 text-center cursor-pointer transition-all hover:border-blue-400">
+                    <svg class="mx-auto h-16 w-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                    </svg>
+                    <p class="text-xl text-gray-700 mb-2">Drag & Drop files here</p>
+                    <p class="text-gray-500 mb-4">or</p>
+                    <button type="button" onclick="document.getElementById('fileInput').click()" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                        Browse Files
+                    </button>
+                    <input type="file" id="fileInput" class="hidden" multiple>
+                    <p class="text-sm text-gray-400 mt-4">Maximum file size: 10GB</p>
+                </div>
+            </div>
+
+            <!-- File List -->
+            <div id="fileList" class="space-y-3 mb-6"></div>
+
+            <!-- Upload Button -->
+            <button id="uploadBtn" class="w-full bg-green-600 text-white py-4 rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg disabled:bg-gray-400 disabled:cursor-not-allowed hidden">
+                Start Upload
+            </button>
+
+            <!-- View Uploaded Files -->
+            <a href="/uploaded" class="block text-center text-blue-600 hover:text-blue-800 mt-6">
+                View Uploaded Files →
+            </a>
+        </div>
+    </div>
+
+    <script src="/js/upload.js"></script>
+</body>
+</html>
