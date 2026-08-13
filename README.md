@@ -10,10 +10,10 @@ A lightweight, modern, and high-speed local network file transfer application bu
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 [Key Features](#-key-features) •
-[Tech Stack](#-tech-stack) •
+[Tech Stack](#%EF%B8%8F-tech-stack) •
 [Getting Started](#-getting-started) •
 [Project Structure](#-project-structure) •
-[API Reference](#-api-reference)
+[API Reference](#-api-endpoints--routes)
 
 </div>
 
@@ -73,7 +73,7 @@ npm start
 4) Access the application:
 
     - Locally: Open http://localhost:3000 in your browser.
-    - From another device (Phone/Tablet/PC): Open <kbd>http://<YOUR_SERVER_IP>:3000</kbd> (The exact IP is displayed on the main page header).
+    - From another device (Phone/Tablet/PC): Open `http://<YOUR_SERVER_IP>:3000` (The exact IP is displayed on the main page header).
 
 ## 📂 Project Structure
 
@@ -95,11 +95,11 @@ npm start
 
 | Method | Endpoint | Description |
 | -----------| --------- | ----------- |
-| <kbd>GET</kbd> | <kbd>/</kbd> | Renders the main file upload page ( `upload.ejs` )   |
-| <kbd>GET</kbd> | <kbd>/uploaded</kbd> | Renders the list of all uploaded files ( `uploaded.ejs` )   |
-| <kbd>POST</kbd> | <kbd>/upload</kbd> | Handles file upload stream processing   |
-| <kbd>GET</kbd> | <kbd>/download/:filename</kbd> | Downloads the specified file from the server   |
-| <kbd>DELETE</kbd> | <kbd>/delete/:filename</kbd> | Permanently removes the specified file from storage   |
+| `GET` | `/` | Renders the main file upload page ( `upload.ejs` )   |
+| `GET` | `/uploaded` | Renders the list of all uploaded files ( `uploaded.ejs` )   |
+| `POST` | `/upload` | Handles file upload stream processing   |
+| `GET` | `/download/:filename` | Downloads the specified file from the server   |
+| `DELETE` | `/delete/:filename` | Permanently removes the specified file from storage   |
 
 
 ## 🛡️ Security & Environment Best Practices
@@ -109,7 +109,8 @@ npm start
 - Storage Limits: Ensure your host disk partition has adequate space when handling large (~10GB) files.
 
 ## 🤝 Contributing
-### Contributions are welcome! If you'd like to improve the UI, add new features, or report bugs:
+
+Contributions are welcome! If you'd like to improve the UI, add new features, or report bugs:
 
 - Fork the Project
 
