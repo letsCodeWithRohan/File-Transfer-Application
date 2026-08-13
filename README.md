@@ -19,6 +19,14 @@ A lightweight, modern, and high-speed local network file transfer application bu
 
 ---
 
+## 📸 Screenshots & Preview
+
+| Desktop View (Dark Mode) | Mobile View |
+| :---: | :---: |
+| ![Desktop](/previews/desktop.png) | ![Mobile](/previews/mobile.png) |
+
+---
+
 ## 🚀 Key Features
 
 - ⚡ **High-Speed Transfers**: Streamlined local network transfer bypassing external internet speeds.
@@ -75,6 +83,8 @@ npm start
     - Locally: Open http://localhost:3000 in your browser.
     - From another device (Phone/Tablet/PC): Open `http://<YOUR_SERVER_IP>:3000` (The exact IP is displayed on the main page header).
 
+---
+
 ## 📂 Project Structure
 
 ```text
@@ -91,6 +101,8 @@ npm start
 └── README.md                  # Documentation
 ```
 
+---
+
 ## 📡 API Endpoints & Routes
 
 | Method | Endpoint | Description |
@@ -101,12 +113,15 @@ npm start
 | `GET` | `/download/:filename` | Downloads the specified file from the server   |
 | `DELETE` | `/delete/:filename` | Permanently removes the specified file from storage   |
 
+---
 
 ## 🛡️ Security & Environment Best Practices
 
 - Network Restrictions: By default, this app is configured for local network (LAN) communication. If exposing to the public internet, ensure proper authentication and HTTPS layer setup via a reverse proxy (e.g., Nginx, Caddy).
 
 - Storage Limits: Ensure your host disk partition has adequate space when handling large (~10GB) files.
+
+---
 
 ## 🤝 Contributing
 
@@ -121,6 +136,8 @@ Contributions are welcome! If you'd like to improve the UI, add new features, or
 - Push to the Branch ( `git push origin feature/AmazingFeature` )
 
 - Open a Pull Request
+
+---
 
 ## 📜 License
 
