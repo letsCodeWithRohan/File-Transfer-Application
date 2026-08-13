@@ -30,7 +30,8 @@ A lightweight, modern, and high-speed local network file transfer application bu
 ## 🚀 Key Features
 
 - ⚡ **High-Speed Transfers**: Streamlined local network transfer bypassing external internet speeds.
-- 📦 **Large File Handling**: Support for uploading files up to **10GB** in size.
+- 📦 **Large File Handling**: Support for uploading files up to **30GB** in size.
+- 💨 **QR Scan**: Shows QR code to scan and open applicaion url quickly.
 - 🎨 **Adaptive Theme (Dark/Light)**: Responsive UI built with Tailwind CSS that automatically adapts to system color scheme preferences.
 - 📱 **Fully Responsive**: Optimized for desktop, tablet, and mobile browsers.
 - 🖱️ **Drag-and-Drop Interface**: Smooth interactive file dropzone for hassle-free batch selection.
