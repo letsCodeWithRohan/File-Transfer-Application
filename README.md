@@ -40,6 +40,41 @@ A lightweight, modern, and high-speed local network file transfer application bu
 
 ---
 
+## 🏁 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org) (v16.x or higher)
+- [npm](https://www.npmjs.com/) (v8.x or higher)
+
+### Installation
+
+1) Clone the repository:
+
+```bash
+git clone https://github.com/letsCodeWithRohan/File-Transfer-Application.git
+cd File-Transfer-Application
+```
+
+2) Install dependencies:
+
+```bash
+npm install
+```
+
+3) Start the application:
+
+```bash
+npm start
+```
+
+4) Access the application:
+
+    - Locally: Open http://localhost:3000 in your browser.
+    - From another device (Phone/Tablet/PC): Open <kbd>http://<YOUR_SERVER_IP>:3000</kbd> (The exact IP is displayed on the main page header).
+
 ## 📂 Project Structure
 
 ```text
@@ -54,3 +89,38 @@ A lightweight, modern, and high-speed local network file transfer application bu
 ├── server.js                  # Express server entry point & API routes
 ├── package.json               # Dependencies & scripts
 └── README.md                  # Documentation
+```
+
+## 📡 API Endpoints & Routes
+
+| Method | Endpoint | Description |
+| -----------| --------- | ----------- |
+| <kbd>GET</kbd> | <kbd>/</kbd> | Renders the main file upload page ( `upload.ejs` )   |
+| <kbd>GET</kbd> | <kbd>/uploaded</kbd> | Renders the list of all uploaded files ( `uploaded.ejs` )   |
+| <kbd>POST</kbd> | <kbd>/upload</kbd> | Handles file upload stream processing   |
+| <kbd>GET</kbd> | <kbd>/download/:filename</kbd> | Downloads the specified file from the server   |
+| <kbd>DELETE</kbd> | <kbd>/delete/:filename</kbd> | Permanently removes the specified file from storage   |
+
+
+## 🛡️ Security & Environment Best Practices
+
+- Network Restrictions: By default, this app is configured for local network (LAN) communication. If exposing to the public internet, ensure proper authentication and HTTPS layer setup via a reverse proxy (e.g., Nginx, Caddy).
+
+- Storage Limits: Ensure your host disk partition has adequate space when handling large (~10GB) files.
+
+## 🤝 Contributing
+### Contributions are welcome! If you'd like to improve the UI, add new features, or report bugs:
+
+- Fork the Project
+
+- Create your Feature Branch ( `git checkout -b feature/AmazingFeature` )
+
+- Commit your Changes ( `git commit -m 'Add some AmazingFeature'` )
+
+- Push to the Branch ( `git push origin feature/AmazingFeature` )
+
+- Open a Pull Request
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
