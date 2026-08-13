@@ -2,6 +2,10 @@
 
 # 📁 High-Speed File Transfer & Local Storage Platform
 
+<p align="center">
+  <img src="previews/banner.webp" alt="Project Banner" width="100%">
+</p>
+
 A lightweight, modern, and high-speed local network file transfer application built with **Node.js**, **Express**, **EJS**, and **Tailwind CSS**. Upload, manage, and download large files (up to 10GB) seamlessly across devices on the same network without relying on external cloud services.
 
 [![Node.js](https://img.shields.io/badge/Node.js-v18%2B-green.svg)](https://nodejs.org/)
