@@ -6,15 +6,17 @@
     <title>Uploading - File Storage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-300">
+    <div class="container mx-auto px-4 py-8 sm:py-12">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-8">
-                <h1 class="text-4xl font-bold text-gray-800 mb-2">Uploading Files</h1>
-                <p class="text-gray-600">Please wait while your files are being uploaded</p>
+                <!-- Animated Spinner Icon -->
+                <div class="w-12 h-12 border-4 border-blue-200 dark:border-blue-900 border-t-blue-600 dark:border-t-blue-400 rounded-full animate-spin mx-auto mb-4"></div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-2">Uploading Files</h1>
+                <p class="text-slate-600 dark:text-slate-400">Please wait while your files are being processed...</p>
             </div>
 
-            <!-- Progress Cards -->
+            <!-- Progress Cards Container -->
             <div id="uploadProgress" class="space-y-4"></div>
         </div>
     </div>
