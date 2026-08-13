@@ -23,7 +23,7 @@ A lightweight, modern, and high-speed local network file transfer application bu
 
 | Desktop View (Dark Mode) | Mobile View |
 | :---: | :---: |
-| ![Desktop](/previews/desktop.png) | ![Mobile](/previews/mobile.png) |
+| ![Desktop](/previews/desktop.webp) | ![Mobile](/previews/mobile.webp) |
 
 ---
 
