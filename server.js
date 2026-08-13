@@ -2,6 +2,7 @@ const express = require('express');
 const fileUpload = require('express-fileupload');
 const path = require('path');
 const fs = require('fs');
+const qrcode = require('qrcode');
 
 const app = express();
 const PORT = 3000;
@@ -134,10 +135,18 @@ function formatBytes(bytes, decimals = 2) {
     return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 }
 
+function generateQRCode(data) {
+    qrcode.toString(data, { type: 'terminal' }, function (err, qr) {
+        if (err) return console.log("Unable to generate QR code");
+        console.log(qr);
+    });
+}
+
 app.listen(PORT, '0.0.0.0', () => {
     const localIP = getLocalIP();
     console.log(`\n🚀 File Storage Server Running!`);
     console.log(`\n📍 Access from this device: http://localhost:${PORT}`);
-    console.log(`📍 Access from other devices: http://${localIP}:${PORT}`);
+    console.log(`📍 Access from other devices: http://${localIP}:${PORT}\n`);
+    generateQRCode(`http://${localIP}:${PORT}`);
     console.log(`\n📁 Files will be stored in: ${uploadsDir}\n`);
 });

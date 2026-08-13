@@ -119,7 +119,7 @@ npm start
 
 - Network Restrictions: By default, this app is configured for local network (LAN) communication. If exposing to the public internet, ensure proper authentication and HTTPS layer setup via a reverse proxy (e.g., Nginx, Caddy).
 
-- Storage Limits: Ensure your host disk partition has adequate space when handling large (~10GB) files.
+- Storage Limits: Ensure your host disk partition has adequate space when handling large (~30GB) files.
 
 ---
 
