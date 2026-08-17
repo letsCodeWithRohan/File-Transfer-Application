@@ -86,7 +86,7 @@ npm start
 4) Access the application:
 
     - Locally: Open http://localhost:3000 in your browser.
-    - From another device (Phone/Tablet/PC): Open `http://<YOUR_SERVER_IP>:3000` (The exact IP is displayed on the main page header).
+    - From another device (Phone/Tablet/PC): Open `http://<YOUR_SERVER_IP>:3000` (The exact IP is displayed on the main page header) OR Just simply scan the generated QR code (Recommended).
 
 ---
 
